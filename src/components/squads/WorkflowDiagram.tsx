@@ -30,9 +30,9 @@ function AgentLegend({ agents }: { agents: WorkflowMeta['agents'] }) {
 function WorkflowHeader({ meta }: { meta: WorkflowMeta }) {
   return (
     <div className="flex items-center gap-3 px-3 py-2 border-b border-border bg-bg-elevated/30">
-      <span className="text-body text-text-primary font-medium">{meta.name}</span>
+      <span className="text-sm text-text-primary font-medium">{meta.name}</span>
       {meta.version && (
-        <span className="text-detail text-text-muted bg-bg-secondary px-1.5 py-0.5 rounded">
+        <span className="text-detail text-text-muted bg-bg-secondary px-1.5 py-0.5">
           v{meta.version}
         </span>
       )}
