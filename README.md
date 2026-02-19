@@ -409,7 +409,65 @@ Contribuições são muito bem-vindas! Este é um projeto em fase inicial e há 
 | **Novas views** | Criar páginas novas no dashboard | Avançado |
 | **Server features** | Adicionar endpoints, melhorar performance | Avançado |
 
-### Passo a Passo para Contribuir
+### Contribuindo com AIOS (Recomendado)
+
+Se você tem o AIOS instalado, use os agentes para ajudar no desenvolvimento:
+
+#### 🏗️ Para novas features — Use @architect + @dev
+
+```bash
+# 1. Peça ao Architect para planejar
+@architect Quero adicionar um gráfico de métricas na view Monitor.
+           Analise a estrutura atual e sugira a melhor abordagem.
+
+# 2. Depois peça ao Dev para implementar
+@dev Implemente o gráfico de métricas seguindo o plano do Architect.
+     Use Recharts e siga os padrões existentes em src/components/monitor/
+```
+
+#### 🎨 Para melhorias de UI — Use @ux-design-expert + @dev
+
+```bash
+# 1. Peça ao UX Designer para analisar
+@ux-design-expert Analise a view Kanban e sugira melhorias de usabilidade.
+                  Considere acessibilidade e mobile.
+
+# 2. Depois implemente com o Dev
+@dev Aplique as melhorias de UX sugeridas no Kanban.
+```
+
+#### 🐛 Para bugs — Use @qa + @dev
+
+```bash
+# 1. Peça ao QA para investigar
+@qa O WebSocket do Monitor desconecta após 5 minutos.
+    Investigue a causa raiz.
+
+# 2. Depois corrija com o Dev
+@dev Corrija o problema de desconexão do WebSocket identificado pelo QA.
+```
+
+#### 🚀 Para deploy/PR — Use @devops
+
+```bash
+# Quando terminar, peça ao DevOps para criar o PR
+@devops Crie um PR para a branch atual com as mudanças do Monitor.
+        Inclua descrição detalhada e screenshots.
+```
+
+#### ✅ Para validação final — Use @qa
+
+```bash
+# Antes de submeter, peça ao QA para revisar
+@qa Faça uma revisão completa das mudanças.
+    Verifique lint, types, testes e funcionamento visual.
+```
+
+---
+
+### Contribuindo sem AIOS (Manual)
+
+Se preferir contribuir sem usar os agentes:
 
 #### 1. Fork e Clone
 
